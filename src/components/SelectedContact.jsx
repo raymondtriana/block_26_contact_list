@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useEffect } from "react";
-
+import "../styles/SelectedContact.css"
 export default function SelectedContact({
   selectedContactID,
   setSelectedContactID,
@@ -23,6 +23,7 @@ export default function SelectedContact({
   if (contact && contact.address && contact.company) {
       return (
         <>
+        <div id="contact-details">
           <p>id: {contact.id}</p>
           <p>name: {contact.name}</p>
           <p>username: {contact.username}</p>
@@ -42,6 +43,7 @@ export default function SelectedContact({
                 {printObject(contact.company)}
  
             </ul>
+        </div>
           <button
             onClick={() => {
               setSelectedContactID(null);

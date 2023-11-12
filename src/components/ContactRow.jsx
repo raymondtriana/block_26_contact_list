@@ -4,9 +4,9 @@ export default function ContactRow({setSelectedContactID, contact }) {
       onClick={()=>{
         setSelectedContactID(contact.id);
       }}>
-        <td>{contact.name}</td>
-        <td>{contact.email}</td>
-        <td>{contact.phone}</td>
+        <td className="name-column">{contact.name}</td>
+        <td className="email-column">{contact.email}</td>
+        <td className="phone-column">{contact.phone}</td>
       </tr>
     );
   }

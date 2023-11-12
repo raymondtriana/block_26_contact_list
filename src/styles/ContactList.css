@@ -1,0 +1,32 @@
+table {
+  background-color: rgb(54, 54, 54);
+}
+th {
+  border-bottom: 1px solid turquoise;
+}
+td {
+  border: 1px solid rebeccapurple;
+}
+
+#name-header {
+  font-weight: bold;
+  color: brown;
+}
+#email-header {
+  font-weight: bold;
+  color:seagreen;
+}
+#phone-header {
+  font-weight: bold;
+  color:darkcyan;
+}
+
+.name-column{
+    background-image: linear-gradient(to bottom right, rgb(189, 36, 36), rgb(54,54,54));
+}
+.email-column{
+    background-image: linear-gradient(to bottom right,rgb(44, 173, 100),rgb(54,54,54));
+}
+.phone-column{
+    background-image: linear-gradient(to bottom right,rgb(1, 151, 151),rgb(54,54,54));
+}

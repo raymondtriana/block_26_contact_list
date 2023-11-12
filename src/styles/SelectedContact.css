@@ -1,0 +1,34 @@
+div {
+    background-color: rgb(54, 54, 54);
+}
+
+*{
+    text-align: left;
+    font-weight: bold;
+}
+
+ul{
+    background-color: rgb(60,60,60);
+    list-style-type:none;
+    padding-left: 0%;
+}
+
+ul > ul{
+    background-color: rgb(70,70,70);
+}
+ul>p{
+    padding-left: 5%;
+}
+ul>ul>p{
+    padding-left: 10%;
+}
+ul>ul>li{
+    padding-left: 15%;
+}
+li{
+    padding-left: 10%;
+}
+#contact-details{
+    border: 1px solid purple;
+
+}
