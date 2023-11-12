@@ -14,7 +14,6 @@ export default function ContactList({setSelectedContactID}) {
         // your fetch logic will go here
         let items = await fetch("https://fsa-jsonplaceholder-69b5c48f1259.herokuapp.com/users");
         items = await items.json();
-        console.log(items);
         setContacts(items);
       } catch (error) {
         console.error(error);
@@ -22,7 +21,6 @@ export default function ContactList({setSelectedContactID}) {
     }
     fetchContacts()
   }, []);
-  console.log("Contacts: ", contacts);
   return (
     <table>
       <thead>

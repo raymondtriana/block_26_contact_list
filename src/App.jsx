@@ -3,12 +3,13 @@ import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
 import ContactList from "./components/ContactList";
+import SelectedContact from "./components/SelectedContact";
 function App() {
   const [count, setCount] = useState(0);
   const [selectedContactID, setSelectedContactID] = useState(null);
   return (
     <>
-      {selectedContactID ? <div>Selected Contact View</div> : <ContactList setSelectedContactID={setSelectedContactID}/>}
+      {selectedContactID ? <SelectedContact selectedContactID={selectedContactID} setSelectedContactID={setSelectedContactID}/> : <ContactList setSelectedContactID={setSelectedContactID}/>}
     </>
   );
 }
