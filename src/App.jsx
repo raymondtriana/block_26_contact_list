@@ -5,10 +5,10 @@ import "./App.css";
 import ContactList from "./components/ContactList";
 function App() {
   const [count, setCount] = useState(0);
-
+  const [selectedContactID, setSelectedContactID] = useState(null);
   return (
     <>
-      <ContactList/>
+      {selectedContactID ? <div>Selected Contact View</div> : <ContactList setSelectedContactID={setSelectedContactID}/>}
     </>
   );
 }
